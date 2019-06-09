@@ -1,42 +1,26 @@
-<!DOCTYPE html>
+#header {
+  display: grid;
+  grid-template-columns: 1fr 6fr 7fr;
+  grid-template-rows: 1fr;
+  position: fixed;
+}
 
-<html>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+#nav-bar {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: 
+}
 
-<header id="header">
-  <img id="header-img" src="https://muscootfarm.org/wp-content/uploads/2018/09/Screen-Shot-2018-09-06-at-1.38.00-PM-e1536255666182.png" height=100px width=100px;>
-  <nav id="nav-bar"> 
-    <a class="nav-link" href="#Podcast"> Podcast </a>
-    <a class="nav-link" href="#Teaching"> Teaching from the Word </a>
-    <a class="nav-link" href="#Resources"> Resources </a>
-  </nav>
-  
-</header>
-  
-<body>
+#header-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: left; 
+}
 
-<iframe id="video" src="https://www.youtube.com/watch?v=IpXI6cvRbrc"
-   width="560" height="315" frameborder="0" allowfullscreen>
-</iframe>  
-  
-<section id="Podcast">
-</section>  
-  
-<section id="Teaching">
-</section>
+#nav-link {
+  padding: 10px;
+}
 
-<section id="Resources">
-</section>
-  
-<section id="Feedback">
-  <form id="form">
-    <label for="email" id="email-label"> Email: </label> 
-      <input id="email" type="email" placeholder="Give us your email please!"> 
-  </form>
-</section>  
-  
-  
-</body>  
-  
-
-</html>
