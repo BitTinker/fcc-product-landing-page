@@ -1,17 +1,19 @@
 #header {
   display: grid;
-  grid-template-columns: 1fr 6fr 7fr;
+  grid-template-columns: 1fr 4fr 3fr 3fr;
   grid-template-rows: 1fr;
   position: fixed;
+  background-color: #5DBCD2;
+  z-index: 2;
 }
 
 #nav-bar {
   grid-column: 2/3;
   grid-row: 1/2;
-  padding: 20px 50px;
+  padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: 
+  justify-items: center;
 }
 
 #header-img {
@@ -20,7 +22,9 @@
   justify-self: left; 
 }
 
-#nav-link {
-  padding: 10px;
+#video {
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  z-index: 1;
 }
-
