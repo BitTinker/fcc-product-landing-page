@@ -1,25 +1,47 @@
 #header {
   display: grid;
-  grid-template-columns: 1fr 4fr 3fr 3fr;
+  grid-template-columns: 1fr 3fr 7fr;
   grid-template-rows: 1fr;
   position: fixed;
-  background-color: #5DBCD2;
+  background-color: #393f4d;
   z-index: 2;
+  font-family: Arial;
 }
 
 #nav-bar {
   grid-column: 2/3;
   grid-row: 1/2;
-  padding: 20px;
+  padding: 20px 20px 20px 0px;
+  margin: 10px 10px 10px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  align-items: center;
+}
+
+.nav-link {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #e1e8f0;
+  border-radius: 10px;
+  background-color: #e1e8f0;
+  padding: 8px;
+  margin: 5px;
+  color: black;
+}
+
+a:hover {
+  color: #e62739;
 }
 
 #header-img {
   grid-column: 1/2;
   grid-row: 1/2;
   justify-self: left; 
+}
+
+body {
+  background-color: #e1e8f0;
 }
 
 #video {
@@ -32,3 +54,14 @@
 #Feedback {
   /*need to center this*/
 }
+
+/* Color Palette:
+Are ya yellow?!: #feda6a
+
+Silver Fox: #d4d4dc
+
+Deep Matte Grey: #393f4d
+
+Dark Slate: #1d1e22
+
+Rich Red: #e62739 */
